@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { BrowserRouter as Router } from 'react-router-dom';
 import CSSModules from 'react-css-modules';
-import styles from './index.css';
+import styles from './styles.css';
 
 class App extends Component {
   render() {
