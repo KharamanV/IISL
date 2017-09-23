@@ -2,6 +2,6 @@
 
 require('../services/mongo');
 
-const fixtures = [];
+const { runFixtures } = require('../services/utils');
 
-fixtures.forEach(fixture => fixture());
+runFixtures([]).then(process.exit);
