@@ -1,10 +1,14 @@
-const db = require('knex')({
-  client: 'pg',
+const config = require('config');
+const knex = require('knex');
+
+const { client, dbName: database, user, password } = config.db;
+const db = knex({
+  client,
   connection: {
-    host: '127.0.0.2',
-    user: 'user',
-    password: '',
-    database: 'logoped',
+    user,
+    database,
+    password,
+    host: '127.0.0.1',
   },
 });
 

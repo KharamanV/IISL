@@ -1,6 +1,10 @@
 baseUrl: localhost:3000
 port: 8080
-mongo: mongodb://localhost/app
+db:
+  client: pg
+  dbName: logoped
+  user: root
+  password: root
 
 secrets:
   jwt: app_secret_token
