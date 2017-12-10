@@ -1,11 +1,8 @@
 const Router = require('koa-router');
-const { auth, security } = require('./auth');
+const auth = require('../../modules/Auth/routes');
 
 const router = new Router();
 
-router.use('/auth', auth);
-router.use(security());
-
-// Private routes below
+router.use(auth);
 
 module.exports = router.routes();
