@@ -1,19 +1,18 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
-import { BrowserRouter as Router } from 'react-router-dom';
+import React from 'react';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import CSSModules from 'react-css-modules';
+import Header from '../Header';
+import Login from '../../scenes/Login';
 import styles from './styles.css';
 
-class App extends Component {
-  render() {
-    return (
-      <Router>
-        <div className="app">
-          Hello World!
-        </div>
-      </Router>
-    );
-  }
-}
+const App = () => (
+  <div className="app">
+    <Header />
 
-export CSSModules(App, styles);
+    <Router>
+      <Route path="/login" component={Login} />
+    </Router>
+  </div>
+);
+
+export default CSSModules(App, styles);
