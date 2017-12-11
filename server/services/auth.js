@@ -17,6 +17,7 @@ passport.use(new LocalStrategy((username, password, done) => (
   db.select()
     .from('users')
     .where('name', username)
+    .first()
     .then(user => user || done(null, false, { message: 'Incorrect username' }))
     .then(user => (
       bcrypt.compare(password, user.password)

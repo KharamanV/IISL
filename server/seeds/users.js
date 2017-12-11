@@ -1,6 +1,7 @@
 const bcrypt = require('bcrypt');
 
 const user = {
+  id: 1,
   name: 'admin',
   password: bcrypt.hashSync('admin', 4),
 };
