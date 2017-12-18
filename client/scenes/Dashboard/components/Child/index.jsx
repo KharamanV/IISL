@@ -1,9 +1,14 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-const Child = props => (
+const Child = ({ data }) => (
   <div>
-    Age:
+    Name: {data.full_name}
   </div>
 );
+
+Child.propTypes = {
+  data: PropTypes.shape({}).isRequired,
+};
 
 export default Child;

@@ -8,11 +8,11 @@ class DashboardContainer extends Component {
 
   componentDidMount() {
     fetchChidlren()
-      .then(children => this.setState({ children }));
+      .then(res => console.log(res) || this.setState({ children: res.data }));
   }
 
   render() {
-    return this.state.children.map(() => <Child />);
+    return this.state.children.map(child => <Child data={child} key={child.id} />);
   }
 }
 

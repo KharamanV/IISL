@@ -1,8 +1,9 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import CSSModules from 'react-css-modules';
 import Auth from '@/services/auth';
 import Login from '@/scenes/Login';
+import Dashboard from '@/scenes/Dashboard';
 import PrivateRoute from '../PrivateRoute';
 import Header from '../Header';
 import styles from './styles.css';
@@ -14,14 +15,14 @@ const App = () => (
     <Router>
       <Switch>
         <PrivateRoute
+          exact
           path="/"
-          component={}
+          component={Dashboard}
           isAuthorized={Auth.isAuthorized()}
+          redirect="/login"
         />
 
         <Route path="/login" component={Login} />
-
-        <Redirect to="/login" />
       </Switch>
     </Router>
   </div>
