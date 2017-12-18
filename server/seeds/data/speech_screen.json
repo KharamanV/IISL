@@ -1,0 +1,51 @@
+[
+  {
+    "id": 9,
+    "children_id": 1,
+    "ff_perception": "Отличное",
+    "study_year": 2,
+    "diagnosis": "ФФР"
+  },
+  {
+    "id": 10,
+    "children_id": 5,
+    "ff_perception": "Отличное",
+    "study_year": 23,
+    "diagnosis": "ФФР"
+  },
+  {
+    "id": 11,
+    "children_id": 6,
+    "ff_perception": "Отличное",
+    "study_year": 2,
+    "diagnosis": "ЛЛЫ"
+  },
+  {
+    "id": 12,
+    "children_id": 3,
+    "ff_perception": "Отличное",
+    "study_year": 2,
+    "diagnosis": "Example"
+  },
+  {
+    "id": 13,
+    "children_id": 4,
+    "ff_perception": "Отличное",
+    "study_year": 2,
+    "diagnosis": "Все хорошо"
+  },
+  {
+    "id": 14,
+    "children_id": 7,
+    "ff_perception": "Хорошее",
+    "study_year": 2,
+    "diagnosis": "ФНР"
+  },
+  {
+    "id": 15,
+    "children_id": 15,
+    "ff_perception": "отличное",
+    "study_year": 1,
+    "diagnosis": "ППР"
+  }
+]

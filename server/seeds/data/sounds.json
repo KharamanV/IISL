@@ -1,0 +1,182 @@
+[
+  {
+    "id": 1,
+    "name": "С",
+    "transcription": "S",
+    "is_screen": 1
+  },
+  {
+    "id": 2,
+    "name": "З",
+    "transcription": "Z",
+    "is_screen": 1
+  },
+  {
+    "id": 3,
+    "name": "Ц",
+    "transcription": "C",
+    "is_screen": 1
+  },
+  {
+    "id": 4,
+    "name": "С-Сь",
+    "transcription": "S-S'",
+    "is_screen": 0
+  },
+  {
+    "id": 5,
+    "name": "Ч",
+    "transcription": "Ch",
+    "is_screen": 1
+  },
+  {
+    "id": 6,
+    "name": "Ч-Чь",
+    "transcription": "Ch-Ch'",
+    "is_screen": 0
+  },
+  {
+    "id": 7,
+    "name": "З-Зь",
+    "transcription": "Z-Z'",
+    "is_screen": 0
+  },
+  {
+    "id": 8,
+    "name": "Ш",
+    "transcription": "Sh",
+    "is_screen": 1
+  },
+  {
+    "id": 9,
+    "name": "Ж",
+    "transcription": "Zh",
+    "is_screen": 1
+  },
+  {
+    "id": 10,
+    "name": "Щ",
+    "transcription": "Sch",
+    "is_screen": 1
+  },
+  {
+    "id": 11,
+    "name": "Р",
+    "transcription": "R",
+    "is_screen": 1
+  },
+  {
+    "id": 12,
+    "name": "Л",
+    "transcription": "L",
+    "is_screen": 1
+  },
+  {
+    "id": 14,
+    "name": "К",
+    "transcription": "K",
+    "is_screen": 1
+  },
+  {
+    "id": 15,
+    "name": "Г",
+    "transcription": "G",
+    "is_screen": 1
+  },
+  {
+    "id": 16,
+    "name": "Х",
+    "transcription": "H",
+    "is_screen": 1
+  },
+  {
+    "id": 17,
+    "name": "Сь",
+    "transcription": "S'",
+    "is_screen": 0
+  },
+  {
+    "id": 18,
+    "name": "Зь",
+    "transcription": "Z'",
+    "is_screen": 0
+  },
+  {
+    "id": 19,
+    "name": "Рь",
+    "transcription": "R'",
+    "is_screen": 0
+  },
+  {
+    "id": 20,
+    "name": "C-З",
+    "transcription": "S-Z",
+    "is_screen": 0
+  },
+  {
+    "id": 21,
+    "name": "С-Ц",
+    "transcription": "S-C",
+    "is_screen": 0
+  },
+  {
+    "id": 22,
+    "name": "С-Ш",
+    "transcription": "S-Sh",
+    "is_screen": 0
+  },
+  {
+    "id": 23,
+    "name": "Ж-З",
+    "transcription": "Zh-Z",
+    "is_screen": 0
+  },
+  {
+    "id": 24,
+    "name": "Ж-Ш",
+    "transcription": "Zh-Sh",
+    "is_screen": 0
+  },
+  {
+    "id": 25,
+    "name": "Ч-Ть",
+    "transcription": "Ch-T'",
+    "is_screen": 0
+  },
+  {
+    "id": 26,
+    "name": "Ль-Л",
+    "transcription": "L-L'",
+    "is_screen": 0
+  },
+  {
+    "id": 27,
+    "name": "Ч-Щ",
+    "transcription": "Ch-Sh'",
+    "is_screen": 0
+  },
+  {
+    "id": 28,
+    "name": "Щ-Сь",
+    "transcription": "Sh'-S'",
+    "is_screen": 0
+  },
+  {
+    "id": 29,
+    "name": "Щ-Ть",
+    "transcription": "Sh'-T'",
+    "is_screen": 0
+  },
+  {
+    "id": 30,
+    "name": "Р-Л",
+    "transcription": "R-L",
+    "is_screen": 0
+  },
+  {
+    "id": 31,
+    "name": "Рь-Й",
+    "transcription": "R'-Y",
+    "is_screen": 0
+  }
+]

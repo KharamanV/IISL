@@ -7,3 +7,5 @@ rules:
       - _id
 env:
   browser: true
+settings:
+  import/resolver: webpack

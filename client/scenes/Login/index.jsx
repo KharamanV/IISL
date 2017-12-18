@@ -1,6 +1,6 @@
-/* eslint-disable */
 import React, { Component } from 'react';
-import axios from 'axios';
+import Auth from '@/services/auth';
+import login from './api';
 
 class Login extends Component {
   state = {
@@ -11,15 +11,28 @@ class Login extends Component {
   handleSubmit = (e) => {
     e.preventDefault();
 
-    axios.post('http://localhost:8080/api/login', { ...this.state })
-      .then(console.log);
+    login(this.state)
+      .then(res => Auth.setAuthorized(res.data.token, '/'));
   };
+
+  handleInputChange = e => this.setState({ [e.target.name]: e.target.value });
 
   render() {
     return (
       <form onSubmit={this.handleSubmit}>
-        <input type="text" placeholder="Login" onChange={e => this.setState({ username: e.target.value })} />
-        <input type="password" placeholder="Password" onChange={e => this.setState({ password: e.target.value })} />
+        <input
+          type="text"
+          placeholder="Login"
+          onChange={this.handleInputChange}
+          name="username"
+        />
+
+        <input
+          type="password"
+          placeholder="Password"
+          onChange={this.handleInputChange}
+          name="password"
+        />
 
         <button type="submit">OK</button>
       </form>

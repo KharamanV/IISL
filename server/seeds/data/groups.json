@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "name": "admin",
+    "description": "Administrator"
+  },
+  {
+    "id": 5,
+    "name": "teacher",
+    "description": "Учитель-логопед"
+  },
+  {
+    "id": 6,
+    "name": "headmaster",
+    "description": "Заведующая ПМПК"
+  }
+]

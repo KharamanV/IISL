@@ -3,7 +3,7 @@ port: 8080
 db:
   client: pg
   dbName: logoped
-  user: root
+  user: postgres
   password: root
 
 secrets:

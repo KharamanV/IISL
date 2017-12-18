@@ -1,0 +1,23 @@
+[
+  {
+    "id": 6,
+    "children_id": 4,
+    "group_number": null,
+    "day": 1,
+    "time": "13:02:00"
+  },
+  {
+    "id": 7,
+    "children_id": null,
+    "group_number": 2,
+    "day": 2,
+    "time": "14:00:00"
+  },
+  {
+    "id": 10,
+    "children_id": null,
+    "group_number": 1,
+    "day": 1,
+    "time": "12:00:00"
+  }
+]
