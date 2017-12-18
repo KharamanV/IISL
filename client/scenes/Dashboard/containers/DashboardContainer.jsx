@@ -8,7 +8,7 @@ class DashboardContainer extends Component {
 
   componentDidMount() {
     fetchChidlren()
-      .then(res => console.log(res) || this.setState({ children: res.data }));
+      .then(res => this.setState({ children: res.data }));
   }
 
   render() {
