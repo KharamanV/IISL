@@ -43,7 +43,13 @@ const config = {
       {
         test: /\.jsx?$/,
         exclude: /node_modules/,
-        use: ['babel-loader', 'eslint-loader'],
+        use: [
+          'babel-loader',
+          {
+            loader: 'eslint-loader',
+            options: { quiet: !ENV_PRODUCTION },
+          },
+        ],
       },
       {
         test: /\.(png|jpe?g|gif|woff|woff2|eot|ttf|svg)$/,
