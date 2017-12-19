@@ -1,6 +1,11 @@
+body {
+  background-color: #5a5a5a;
+}
+
 body,
 ul {
   margin: 0;
+  font-family: 'Roboto', sans-serif;
 }
 
 .navigation {
@@ -14,4 +19,8 @@ ul {
   margin: 0 15px;
   color: #FFF;
   text-decoration: none;
+}
+
+.content {
+  padding: 16px;
 }

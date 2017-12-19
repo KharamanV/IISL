@@ -1,10 +1,8 @@
 const Router = require('koa-router');
-const db = require('../../services/db');
+const { getChildren } = require('./controllers');
 
 const router = new Router();
 
-router.get('/children', async (ctx) => {
-  ctx.body = await db.select().from('children');
-});
+router.get('/children', getChildren);
 
 module.exports = router.routes();

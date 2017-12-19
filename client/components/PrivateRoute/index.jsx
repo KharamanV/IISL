@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Route, Redirect } from 'react-router-dom';
+import Auth from '@/services/auth';
 
 const PrivateRoute = ({ component: Component, isAuthorized, redirect, ...rest }) => (
   <Route
@@ -19,6 +20,9 @@ PrivateRoute.propTypes = {
   redirect: PropTypes.string,
 };
 
-PrivateRoute.defaultProps = { redirect: '/' };
+PrivateRoute.defaultProps = {
+  redirect: '/login',
+  isAuthorized: Auth.isAuthorized(),
+};
 
 export default PrivateRoute;

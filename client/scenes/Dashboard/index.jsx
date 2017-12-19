@@ -1,6 +1,16 @@
 import React from 'react';
-import DashboardContainer from './containers/DashboardContainer';
+import CSSModules from 'react-css-modules';
+import Card from '@/components/Card';
+import styles from './styles.css';
 
-const Dashboard = () => <DashboardContainer />;
+const Dashboard = () => (
+  <div styleName="dashboard">
+    <Card
+      title="Дети"
+      subtitle="Список детей зачисленных на ЛП"
+      link="/children"
+    />
+  </div>
+);
 
-export default Dashboard;
+export default CSSModules(Dashboard, styles);

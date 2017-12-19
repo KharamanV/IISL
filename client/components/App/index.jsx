@@ -1,31 +1,37 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { MuiThemeProvider, getMuiTheme } from 'material-ui/styles';
+import darkBaseTheme from 'material-ui/styles/baseThemes/darkBaseTheme';
 import CSSModules from 'react-css-modules';
-import Auth from '@/services/auth';
 import Login from '@/scenes/Login';
 import Dashboard from '@/scenes/Dashboard';
+import Children from '@/scenes/Children';
 import PrivateRoute from '../PrivateRoute';
 import Header from '../Header';
 import styles from './styles.css';
 
 const App = () => (
-  <div className="app">
-    <Header />
-
+  <MuiThemeProvider muiTheme={getMuiTheme(darkBaseTheme)}>
     <Router>
-      <Switch>
-        <PrivateRoute
-          exact
-          path="/"
-          component={Dashboard}
-          isAuthorized={Auth.isAuthorized()}
-          redirect="/login"
-        />
+      <div className="app">
+        <Header />
 
-        <Route path="/login" component={Login} />
-      </Switch>
+        <div styleName="content">
+          <Switch>
+            <PrivateRoute
+              exact
+              path="/"
+              component={Dashboard}
+            />
+
+            <PrivateRoute path="/children" component={Children} />
+
+            <Route path="/login" component={Login} />
+          </Switch>
+        </div>
+      </div>
     </Router>
-  </div>
+  </MuiThemeProvider>
 );
 
 export default CSSModules(App, styles);
