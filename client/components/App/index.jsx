@@ -6,6 +6,7 @@ import CSSModules from 'react-css-modules';
 import Login from '@/scenes/Login';
 import Dashboard from '@/scenes/Dashboard';
 import Children from '@/scenes/Children';
+import SpeechScreen from '@/scenes/SpeechScreen';
 import PrivateRoute from '../PrivateRoute';
 import Header from '../Header';
 import styles from './styles.css';
@@ -25,6 +26,8 @@ const App = () => (
             />
 
             <PrivateRoute path="/children" component={Children} />
+
+            <PrivateRoute path="/speech_screen" component={SpeechScreen} />
 
             <Route path="/login" component={Login} />
           </Switch>

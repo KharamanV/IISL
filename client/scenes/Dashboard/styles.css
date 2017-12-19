@@ -1,3 +1,8 @@
 .dashboard {
   display: flex;
+  justify-content: space-between;
+}
+
+.dashboard-card {
+  width: 32%;
 }

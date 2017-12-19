@@ -30,6 +30,24 @@ class Header extends Component {
             >
               Home
             </NavLink>
+
+            <NavLink
+              to="/children"
+              styleName="navbar-link"
+              activeClassName="active"
+              onClick={() => this.toggleDrawer()}
+            >
+              Список детей
+            </NavLink>
+
+            <NavLink
+              to="/speech_screen"
+              styleName="navbar-link"
+              activeClassName="active"
+              onClick={() => this.toggleDrawer()}
+            >
+              Речевой экран
+            </NavLink>
           </Drawer>
         </AppBar>
       </header>

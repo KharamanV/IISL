@@ -12,7 +12,11 @@ const CustomTable = ({ headerColumns, children }) => (
   <Table>
     <TableHeader>
       <TableRow>
-        {headerColumns.map(title => <TableHeaderColumn>{title}</TableHeaderColumn>)}
+        {headerColumns.map(title => (
+          <TableHeaderColumn key={title}>
+            {title}
+          </TableHeaderColumn>
+        ))}
       </TableRow>
     </TableHeader>
 

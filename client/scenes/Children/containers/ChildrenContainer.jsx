@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import fetchChidlren from '../../Dashboard/api';
+import fetchChidlren from '../api';
 import ChildrenTable from '../components/ChildrenTable';
 
 class ChildrenContainer extends Component {
