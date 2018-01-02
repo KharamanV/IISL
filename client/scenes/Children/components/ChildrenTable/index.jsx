@@ -17,7 +17,7 @@ const ChildrenTable = ({ data }) => {
   return (
     <CustomTable headerColumns={columns}>
       {data.map(child => (
-        <TableRow>
+        <TableRow key={child.id}>
           <TableRowColumn>{child.full_name}</TableRowColumn>
           <TableRowColumn>{formatDate(child.date)}</TableRowColumn>
           <TableRowColumn>{child.address}</TableRowColumn>
