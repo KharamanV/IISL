@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { Avatar, Divider, ListItem } from 'material-ui';
 
 const ChildrenRow = ({ linkPrefix, data }) => (
-  <Link to={`${linkPrefix}/${data.id}`}>
+  <Link to={`${linkPrefix}/${data.id}`} style={{ textDecoration: 'none' }}>
     <ListItem
       leftAvatar={<Avatar src="https://placehold.it/128x128" />}
       primaryText={data.full_name}

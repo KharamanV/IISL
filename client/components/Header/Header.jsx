@@ -15,7 +15,7 @@ class Header extends Component {
     return (
       <header styleName="navbar">
         <AppBar
-          title={<Link to="/">Logoped</Link>}
+          title={<Link to="/" styleName="home-link">Logoped</Link>}
           onLeftIconButtonClick={() => this.toggleDrawer()}
         >
           <Drawer

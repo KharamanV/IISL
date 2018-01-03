@@ -11,11 +11,14 @@ import { Link } from 'react-router-dom';
 import CSSModules from 'react-css-modules';
 import styles from './styles.css';
 
-const CustomCard = ({ title, subtitle, link, className }) => (
+const CustomCard = ({ title, subtitle, link, img, className }) => (
   <div styleName={className}>
     <Card>
-      <CardMedia overlay={<CardTitle title={title} subtitle={subtitle} />}>
-        <img src="http://placehold.it/400x250" alt="" />
+      <CardMedia
+        overlay={<CardTitle title={title} subtitle={subtitle} />}
+        mediaStyle={{ height: 240, overflow: 'hidden' }}
+      >
+        <img src={img} alt="" />
       </CardMedia>
 
       <CardActions>
@@ -32,11 +35,13 @@ CustomCard.propTypes = {
   subtitle: PropTypes.string,
   link: PropTypes.string.isRequired,
   className: PropTypes.string,
+  img: PropTypes.string,
 };
 
 CustomCard.defaultProps = {
   subtitle: '',
   className: '',
+  img: 'http://placehold.it/400x250',
 };
 
 export default CSSModules(CustomCard, styles);

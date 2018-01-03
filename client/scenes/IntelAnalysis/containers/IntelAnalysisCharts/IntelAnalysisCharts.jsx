@@ -98,7 +98,7 @@ class IntelAnalysis extends Component {
 
   render() {
     return (
-      <div>
+      <div styleName="container">
         <div styleName="chart-single">
           <div>
             <h3>Развитие различных типов звуков</h3>
@@ -195,7 +195,7 @@ class IntelAnalysis extends Component {
           <div>
             <h3>Динамика развития звуков</h3>
 
-            <AreaChart width={800} height={400} data={[
+            <AreaChart width={1000} height={400} data={[
               {name: 'Сентябрь', uv: 4000, pv: 2400, amt: 2400},
               {name: 'Октябрь', uv: 3000, pv: 1398, amt: 2210},
               {name: 'Ноябрь', uv: 2000, pv: 9800, amt: 2290},
@@ -223,7 +223,7 @@ class IntelAnalysis extends Component {
           <div>
             <h3>Динамика развития речи</h3>
 
-            <AreaChart width={800} height={400} data={[
+            <AreaChart width={1000} height={400} data={[
               {name: 'Сентябрь', uv: 4000, pv: 2400, amt: 2400},
               {name: 'Октябрь', uv: 3000, pv: 1398, amt: 2210},
               {name: 'Ноябрь', uv: 2000, pv: 9800, amt: 2290},
@@ -252,7 +252,7 @@ class IntelAnalysis extends Component {
           <div>
             <h3>Прогнозирование развития звуков</h3>
 
-            <AreaChart width={800} height={400} data={[
+            <AreaChart width={1000} height={400} data={[
               {name: 'Сентябрь', uv: 4000, pv: 2400, amt: 2400},
               {name: 'Октябрь', uv: 3000, pv: 1398, amt: 2210},
               {name: 'Ноябрь', uv: 2000, pv: 9800, amt: 2290},
@@ -280,7 +280,7 @@ class IntelAnalysis extends Component {
           <div>
             <h3>Прогнозирование развития речи</h3>
 
-            <AreaChart width={800} height={400} data={[
+            <AreaChart width={1000} height={400} data={[
               {name: 'Сентябрь', uv: 4000, pv: 2400, amt: 2400},
               {name: 'Октябрь', uv: 3000, pv: 1398, amt: 2210},
               {name: 'Ноябрь', uv: 2000, pv: 9800, amt: 2290},

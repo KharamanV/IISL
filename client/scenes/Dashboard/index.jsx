@@ -2,6 +2,13 @@ import React from 'react';
 import CSSModules from 'react-css-modules';
 import Card from '@/components/Card';
 import styles from './styles.css';
+import childrenImg from './assets/img/1.jpg';
+import speechScreenImg from './assets/img/2.jpg';
+import intelAnalysisImg from './assets/img/3.jpg';
+import individualPlansImg from './assets/img/4.jpg';
+import speechCardImg from './assets/img/5.jpg';
+import resultAnalysisImg from './assets/img/6.jpg';
+import individualCardImg from './assets/img/7.jpg';
 
 const Dashboard = () => (
   <div>
@@ -11,6 +18,7 @@ const Dashboard = () => (
           title="Дети"
           subtitle="Список детей зачисленных на ЛП"
           link="/children"
+          img={childrenImg}
         />
       </div>
 
@@ -19,6 +27,7 @@ const Dashboard = () => (
           title="Речеовй экран"
           subtitle="Динамика коррекционной работы в речи ребенка"
           link="/speech_screen"
+          img={speechScreenImg}
         />
       </div>
 
@@ -27,6 +36,7 @@ const Dashboard = () => (
           title="Интеллектуальный анализ"
           subtitle="Анализ проблем, динамика, прогнозирование"
           link="/intel_analysis"
+          img={intelAnalysisImg}
         />
       </div>
     </div>
@@ -37,6 +47,7 @@ const Dashboard = () => (
           title="Индивидуальные планы"
           subtitle="План развития для каждого ребенка"
           link="/individual_plans"
+          img={individualPlansImg}
         />
       </div>
 
@@ -45,6 +56,7 @@ const Dashboard = () => (
           title="Речевые карты"
           subtitle="Карты речевого развития"
           link="/speech_cards"
+          img={speechCardImg}
         />
       </div>
 
@@ -53,6 +65,7 @@ const Dashboard = () => (
           title="Анализ результативности"
           subtitle="Анализ результативности детей"
           link="/result_analysis"
+          img={resultAnalysisImg}
         />
       </div>
     </div>
@@ -63,6 +76,7 @@ const Dashboard = () => (
           title="Индивидуальная карта"
           subtitle="Индивидуальная карта развития"
           link="/individual_cards"
+          img={individualCardImg}
         />
       </div>
     </div>
