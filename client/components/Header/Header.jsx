@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { NavLink, withRouter } from 'react-router-dom';
+import { Link, NavLink, withRouter } from 'react-router-dom';
 import CSSModules from 'react-css-modules';
 import { AppBar, Drawer } from 'material-ui';
 import styles from './styles.css';
@@ -14,7 +14,10 @@ class Header extends Component {
   render() {
     return (
       <header styleName="navbar">
-        <AppBar title="Logoped" onLeftIconButtonClick={() => this.toggleDrawer()}>
+        <AppBar
+          title={<Link to="/">Logoped</Link>}
+          onLeftIconButtonClick={() => this.toggleDrawer()}
+        >
           <Drawer
             docked={false}
             width={240}

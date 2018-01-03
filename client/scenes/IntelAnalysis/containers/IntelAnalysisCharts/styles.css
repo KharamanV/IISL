@@ -1,0 +1,12 @@
+.chart-container,
+.chart-single {
+  display: flex;
+}
+
+.chart {
+  flex-grow: 1;
+}
+
+.chart-single {
+  justify-content: center;
+}
